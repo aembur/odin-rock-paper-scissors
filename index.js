@@ -58,8 +58,8 @@ function getComputerChoice() {
 function getplayerChoice() {
 	while (true) { // keep asking player for input until a valid choice is received
 		let playerInput = prompt("Input your choice:");
-		console.log(playerInput);
-		let choice = choices.findIndex((element) => element === playerInput.toLowerCase());
+		console.log(playerInput.toLowerCase());
+		let choice = choices.findIndex((element) => element.toLowerCase() === playerInput.toLowerCase());
 
 		// findIndex returns -1 if the playerInput doesn't match any of the valid choices
 		if (choice === -1) {
