@@ -45,7 +45,7 @@ function playRound(playerChoice, computerChoice) {
 	}
 	
 	else { // player win
-		return [-1, "You win! " + choices[playerChoice] + " beats " + choices[computerChoice] + "."];
+		return [1, "You win! " + choices[playerChoice] + " beats " + choices[computerChoice] + "."];
 	}
 }
 
@@ -58,7 +58,6 @@ function getComputerChoice() {
 function getplayerChoice() {
 	while (true) { // keep asking player for input until a valid choice is received
 		let playerInput = prompt("Input your choice:");
-		console.log(playerInput.toLowerCase());
 		let choice = choices.findIndex((element) => element.toLowerCase() === playerInput.toLowerCase());
 
 		// findIndex returns -1 if the playerInput doesn't match any of the valid choices
