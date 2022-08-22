@@ -1,0 +1,46 @@
+* {
+	margin: 0;
+	padding: 0;
+	/*border: 1px solid #000;*/
+}
+
+body {
+	background-color: #212121;
+}
+
+#score-header {
+	background-color: #1A1A1A;
+	color: #B0BEC5;
+	display: flex;
+	gap: 20px;
+	height: 80px;
+}
+
+#score-header h1 {
+	color: #eeffff;
+	font-size: 48px;
+}
+
+#score-header h3 {
+	font-size: 28px;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+.vl {
+	border-left: 2px solid #474747;
+	height: 80%;
+	margin: auto 0;
+}
+
+#player-score, #computer-score {
+	display: flex;
+	align-items: center;
+	vertical-align: middle;
+	flex: 1;
+	gap: 20px;
+}
+
+#player-score {
+	justify-content: right;
+}
