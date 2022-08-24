@@ -1,6 +1,7 @@
 * {
 	margin: 0;
 	padding: 0;
+	color: #B0BEC5;
 	/*border: 1px solid #000;*/
 }
 
@@ -43,4 +44,42 @@ body {
 
 #player-score {
 	justify-content: right;
+}
+
+#buttons {
+	margin: 30px 0;
+	display: flex;
+	justify-content: center;
+	gap: 30px
+}
+
+#main h3 {
+	color: #B0BEC5;
+	text-align: center;
+	margin-top: 30px;
+}
+
+#round-outcome {
+	text-align: center;
+}
+
+#buttons button {
+	width: 100px;
+	height: 100px;
+	background-color: #1A1A1A;
+	border-radius: 3px;
+	border: 3px solid #474747;
+	color: #B0BEC5;
+	font-size: 18px;
+	transition: ease-in-out 0.2s;
+}
+
+#buttons button:hover {
+	border: 3px solid #eeffff;
+	scale: 103%;
+}
+
+#buttons button:active {
+	border: 3px solid #1A1A1A;
+	color: #eeffff;
 }
