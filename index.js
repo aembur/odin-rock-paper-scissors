@@ -40,7 +40,7 @@ function playRound(playerChoice, computerChoice) {
 
 	// the choices array is sorted so that idx will lose against idx + 1 % 3 (since it wraps around):
 	// [rock (0) < paper (1) < scissors (2) < rock (0) ...]
-	if (playerChoice + 1 % 3 == computerChoice) { // computer win
+	if ((playerChoice + 1 % 3) == computerChoice) { // computer win
 		return [-1, "You lose! " + choices[computerChoice] + " beats " + choices[playerChoice] + "."];
 	}
 	
