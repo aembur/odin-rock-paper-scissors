@@ -1,9 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
   </head>
   <body>
-	<script src="index.js"></script>
+    <div id="score-header">
+      <div id="player-score">
+        <h3>You</h3>
+        <h1>0</h1>
+      </div>
+      <div class="vl"></div>
+      <div id="computer-score">
+        <h1>0</h1>
+        <h3>Computer</h3>
+      </div>
+    </div>
+    <div id="main">
+      <h3>Choose one:</h3>
+      <div id="buttons">
+        <button id="0">Rock</button>
+        <button id="1">Paper</button>
+        <button id="2">Scissors</button>
+      </div>
+      <p id="round-outcome"></p>
+    </div>
   </body>
 </html>
